@@ -2,6 +2,7 @@ import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout/layout"
+import Seo from "../components/seo"
 
 const IndexPage = () => {
   return (
@@ -14,7 +15,6 @@ const IndexPage = () => {
     </Layout>
   )
 }
+export const Head = () => <Seo title="Home Page"/>
 
 export default IndexPage
-
-export const Head = () => <title>Home Page</title>
